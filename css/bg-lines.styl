@@ -1,0 +1,63 @@
+@import theme-settings
+
+bg-lines-line-count-large = large-columns-count
+bg-lines-line-count-medium = 4
+bg-lines-line-count-small = 2
+
+bg-lines-background-color = master-background-color
+bg-lines-line-color = #000
+
+
+// $common
+//   background: linear-gradient(90deg, bg-lines-background-color, bg-lines-background-color calc(100% - 1.33px), bg-lines-line-color)
+//
+// .lines
+//   @extends $common
+//   background-size (100% / bg-lines-line-count-small)
+//
+//
+// @media (min-width: 600px)
+//   .lines
+//     background-size (100% / bg-lines-line-count-medium)
+//
+//
+// @media (min-width: 900px)
+//   .lines
+//     background-size (100% / bg-lines-line-count-large)
+
+header::before
+header::after
+main::before
+main::after
+footer::before
+footer::after
+  content ''
+  height 100vh
+  position fixed
+  top 0
+  bottom 0
+  left ((100vw - main-frame-width) /2)
+  background transparent
+  border-right 1px solid master-background-color-accent
+  z-index -1
+
+col-span = (main-frame-width / 6)
+
+header::before
+  width (col-span * 1)
+  border-left 1px solid master-background-color-accent
+
+header::after
+  width (col-span * 2)
+
+main::before
+  width (col-span * 3)
+
+main::after
+  width (col-span * 4)
+
+footer::before
+  width (col-span * 5)
+
+footer::after
+  width (col-span * 6)

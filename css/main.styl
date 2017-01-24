@@ -1,2 +1,29 @@
 @import normalize
 @import lazy-reset
+@import theme-settings
+@import bg-lines
+@import simple-grid
+
+body
+  font-size base-font-size
+  line-height base-font-size * (math(2, sqrt))
+  text-align justify
+
+.image-box img
+  width 100%
+  max-width 100%
+
+.main-frame
+  width main-frame-width
+  position relative
+  left ((100vw - main-frame-width) / 2)
+
+.main-frame-standard-box
+  padding 5% 0
+
+.col-container
+  display flex
+  flex-wrap wrap
+
+#greetings
+  min-height 80vh

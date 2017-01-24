@@ -1,0 +1,35 @@
+header::before,
+header::after,
+main::before,
+main::after,
+footer::before,
+footer::after {
+  content: '';
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 4vw;
+  background: transparent;
+  border-right: 1px solid #edf5f8;
+  z-index: -1;
+}
+header::before {
+  width: 15.333333333333334vw;
+  border-left: 1px solid #edf5f8;
+}
+header::after {
+  width: 30.666666666666668vw;
+}
+main::before {
+  width: 46vw;
+}
+main::after {
+  width: 61.333333333333336vw;
+}
+footer::before {
+  width: 76.66666666666667vw;
+}
+footer::after {
+  width: 92vw;
+}

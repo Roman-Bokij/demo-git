@@ -1,0 +1,26 @@
+@media (min-width: 900px) {
+  .col-span-1 {
+    width: 15.333333333333334vw;
+    padding-left: 1px;
+  }
+  .col-span-2 {
+    width: 30.666666666666668vw;
+    padding-left: 1px;
+  }
+  .col-span-3 {
+    width: 46vw;
+    padding-left: 1px;
+  }
+  .col-span-4 {
+    width: 61.333333333333336vw;
+    padding-left: 1px;
+  }
+  .col-span-5 {
+    width: 76.66666666666667vw;
+    padding-left: 1px;
+  }
+  .col-span-6 {
+    width: 92vw;
+    padding-left: 1px;
+  }
+}

@@ -1,0 +1,19 @@
+@import theme-settings
+
+
+
+@media (min-width: break-point-large)
+  columns-count = large-columns-count
+  col-span = (main-frame-width / columns-count)
+  for i in (1..columns-count)
+    .col-span-{i}
+      width (col-span * i)
+      padding-left 1px
+  //
+  // for i in (1..columns-count)
+  //   .col-push-{i}
+  //     left ((main-frame-width / columns-count) * i)
+  //
+  // for i in (1..columns-count)
+  //   .col-pull-{i}
+  //     left ((main-frame-width / columns-count) * (i * -1))
